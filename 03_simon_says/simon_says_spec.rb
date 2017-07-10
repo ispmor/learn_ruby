@@ -36,7 +36,7 @@ describe "Simon says" do
 
   describe "repeat" do
     it "should repeat" do
-      expect(repeat("hello")).to eq("hello hello")
+      expect(repeat("hello",2)).to eq("hello hello")
     end
 
     # Wait a second! How can you make the "repeat" method
@@ -74,7 +74,7 @@ describe "Simon says" do
       expect(first_word("oh dear")).to eq("oh")
     end
   end
-
+##########################################################
   describe "titleize" do
     it "capitalizes a word" do
       expect(titleize("jaws")).to eq("Jaws")
