@@ -1,4 +1,5 @@
 #write your code here
+
 	def echo(word)
 		return word
 	end
@@ -24,4 +25,20 @@ end
 def first_word(text)
 	a= text.split(" ")
 	a[0]
+end
+def titleize(text)
+	text = text.downcase
+	a = text.split(" ")
+	a[0].capitalize!
+	a.each do |i|
+		if i!="and" && i!="of" && i!="over" && i!="the" 
+			i = i.capitalize!
+		end
+		
+		
+	end
+	text = a.join(" ")
+	return text
+	
+
 end
