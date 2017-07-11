@@ -8,8 +8,6 @@ count = 0
 
 	words.each do |i|
 		
-	
-
 	if i[0] == 'a' || i[0] == 'e' || i[0] == 'i' || i[0] == 'o' || i[0] == 'u' 
 		i = i + "ay"
 	elsif i[1] == 'a' || i[1] == 'e' || i[1] == 'i' || i[1] == 'o' || i[1] == 'u' 
@@ -37,16 +35,10 @@ count = 0
 		a = i.size
 		text2 = i[3,a] + i[0,3]+"ay"
 		i = text2
-
 	end
-
 	words[count] = i
 	count+=1
-
-
 end
 text = words.join(" ")
-
 return text
-
 end
